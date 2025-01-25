@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>flipkart</title>
-    <link rel="stylesheet" href="flipkart.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="navbar">
@@ -212,5 +212,28 @@
             </div>
         </div>
     </footer>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+    
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyBe9_6_YPrJFv-7SSTngs8J6wWA5pV3i3U",
+            authDomain: "flipkart-ff087.firebaseapp.com",
+            projectId: "flipkart-ff087",
+            storageBucket: "flipkart-ff087.appspot.com",
+            messagingSenderId: "248252391072",
+            appId: "1:248252391072:web:1e3c27e01f6abf67bf33c5",
+            measurementId: "G-JGYGGZCJ37"
+        };
+    
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
 </body>
 </html>
